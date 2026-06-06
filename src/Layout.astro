@@ -10,8 +10,8 @@ interface Props {
     title: string;
 }
 
-const { description, title } = Astro.props;
 const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
+const { description, title } = Astro.props;
 ---
 
 <!doctype html>
@@ -41,7 +41,7 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
             set:html={JSON.stringify({
                 '@context': 'https://schema.org',
                 '@type': 'WebSite',
-                'founder': {
+                'author': {
                     '@type': 'Person',
                     'name': 'Kevin Huang',
                 },

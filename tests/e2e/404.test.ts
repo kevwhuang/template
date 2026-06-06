@@ -12,6 +12,7 @@ test.describe('404 page', () => {
 
     test('displays 404 heading', async ({ page }) => {
         const h1 = page.locator('h1');
+
         await expect(h1).toContainText('404');
     });
 });
