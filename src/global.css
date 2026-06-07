@@ -16,6 +16,10 @@
     outline-offset: 2px;
 }
 
+::placeholder {
+    user-select: none;
+}
+
 @media (prefers-reduced-motion: reduce) {
     *,
     *::before,
