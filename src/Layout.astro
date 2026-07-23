@@ -58,6 +58,8 @@ const ogImageUrl = `${Astro.site}og.png`;
         <ClientRouter />
     </head>
     <body class="flex flex-col min-h-screen antialiased font-sans bg-zinc-950 text-white">
-        <slot />
+        <main class="flex flex-1 flex-col">
+            <slot />
+        </main>
     </body>
 </html>
