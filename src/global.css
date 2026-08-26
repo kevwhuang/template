@@ -3,10 +3,7 @@
 @theme {
     --color-cyan-20: #06b6d433;
     --color-cyan-80: #06b6d4cc;
-    --font-sans:
-        'Geist Sans',
-        system-ui,
-        sans-serif;
+    --font-sans: var(--font-geist-sans);
 }
 
 a,
